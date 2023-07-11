@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- fonts icon -->
+    <link rel="shortcut icon" href="assets/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/topnav.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/gioithieu.css">
+    <!-- js -->
+    <script src="assets/data/products.js"></script>
+    <script src="assets/js/bundle.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+<body>
+
+    <script> addTopNav(); </script>
+
+    <section style="min-height: 786px;">
+
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Vừa thành lập chưa có gì nổi bật !!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        addContainTaiKhoan(); addPlc();
+    </script>
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+    </div>
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+</html>

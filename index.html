@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- fonts icon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- owl slider -->
+    <link rel="stylesheet" href="assets/js/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/js/owlcarousel/owl.theme.default.min.css">
+    <script src="assets/js/Jquery/Jquery.min.js"></script>
+    <script src="assets/js/owlcarousel/owl.carousel.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/topnav.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/home_products.css">
+    <link rel="stylesheet" href="assets/css/pagination_phantrang.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- js -->
+    <script src="assets/data/products.js"></script>
+    <script src="assets/js/classes.js"></script>
+    <script src="assets/js/bundle.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+<body>
+
+    <script> addTopNav(); </script>
+
+    <section>
+
+        <script> addHeader(); </script>
+
+        <!-- banner -->
+        <div class="banner">
+            <div class="owl-carousel owl-theme"></div>
+        </div>
+        <!-- banner -->
+
+        <img src="assets/img/banners/blackFriday.gif" alt="" style="width: 100%;">
+
+        <!-- menu -->
+        <div class="companyMenu group flexContain"></div>
+        <!-- menu -->
+
+        <!-- bộ lọc -->
+        <div class="flexContain">
+            <div class="pricesRangeFilter dropdown">
+                <button class="dropbtn">Giá tiền</button>
+                <div class="dropdown-content"></div>
+            </div>
+            <div class="promosFilter dropdown">
+                <button class="dropbtn">Khuyến mãi</button>
+                <div class="dropdown-content"></div>
+            </div>
+            <div class="starFilter dropdown">
+                <button class="dropbtn">Số sao</button>
+                <div class="dropdown-content"></div>
+            </div>
+            <div class="sortFilter dropdown">
+                <button class="dropbtn">Sắp xếp</button>
+                <div class="dropdown-content"></div>
+            </div>
+        </div>
+        <!-- bộ lọc -->
+
+        <!-- xóa bộ lọc -->
+        <div class="choosedFilter flexContain" style="display: none;">
+            <a id="deleteAllFilter">
+                <h3>Xóa tất cả</h3>
+            </a>
+        </div>
+        <!-- xóa bộ lọc -->
+
+        <!-- mặc định ẩn filter -->
+        <div class="contain-products" style="display: none;">
+            <div class="filterName">
+                <input type="text" placeholder="Tên..." onkeyup="filterProductsName(this)">
+            </div>
+
+            <ul id="products" class="homeproducts group flexContain">
+                <div id="khongCoSanPham">
+                    <i class="fa fa-times-circle"></i>
+                    Không có sản phẩm nào
+                </div>
+            </ul>
+            <div class="pagination"></div>
+        </div>
+        <!-- mặc định ẩn filter -->
+
+        <!-- khung sản phẩm -->
+        <div class="contain-khungSanPham"></div>
+
+    </section>
+
+    <script>
+        addContainTaiKhoan(); addPlc();
+    </script>
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+    </div>
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+</html>

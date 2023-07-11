@@ -1,0 +1,149 @@
+.banner {
+    background: #f5f5f5;
+    padding-top:  10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+.companyMenu {
+	margin: 10px 0 30px; 
+}
+.companyMenu a {
+    border: 1px solid #fff;
+    height: 40px;
+    line-height: 40px;
+    transition-duration: .2s;
+}
+.companyMenu a:hover {
+	border: 1px solid #aaa;
+	transform: scale(1.1);
+	z-index: 20;
+}
+.companyMenu a img{
+    max-height: 30px;
+    vertical-align: middle;
+}
+
+/* Dropdown */
+.dropbtn {
+    background-color: #444;
+    color: white;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition-duration: .3s;
+}
+.dropbtn:after {
+    content: ' \25B7';
+}
+.dropdown:hover .dropbtn:after{
+    content:' \25BD'
+}
+.dropdown {
+    position: relative;
+    margin: 10px 5px;
+}
+.dropdown-content {
+    z-index: 1;
+    position: absolute;
+    min-width: 170px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    transform: rotateX(90deg);
+    transition-duration: .3s;
+}
+.dropdown-content a {
+    color: #444;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover { 
+    color: white;
+    background-color: #555 
+}
+.dropdown:hover .dropdown-content {
+    transform: rotateY(0deg);
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Filter Name */
+.filterName {
+	margin: 15px auto;
+	text-align: center;
+}
+.filterName input {
+	padding: 0 15px;
+	height: 30px;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	font-size: 15px;
+	-webkit-transition-duration: .3s;
+     -o-transition-duration: .3s;
+        transition-duration: .3s;
+}
+.filterName input:focus {
+	border: 1px solid orange;
+}
+
+/* Choosed filter */
+.choosedFilter { 
+    margin: 10px auto; 
+}
+.choosedFilter i { 
+    transition-duration: .3s; 
+}
+.choosedFilter a:hover > h3 > i { 
+    color: red; 
+}
+.choosedFilter a {
+    font-size: 12px;
+    padding: 6px;
+    color: #fff;
+    background: #288ad6;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+/* Các khung sản phẩm */
+.khungSanPham {
+	width: 100%;
+	margin: 50px 0;
+	border-radius: 5px;
+	border: 1px solid #ff4d00; 
+	box-sizing: border-box;
+}
+.khungSanPham h3.tenKhung {
+    padding: 10px 0;
+	font-size: 1.5e;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50px;
+	color: white;
+	transform: translateY(-50%);
+}
+.khungSanPham li {
+	list-style-type: none; 
+}
+
+/* Nút xem tất cả */
+.xemTatCa {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	margin:	0 auto;
+	padding: 10px 0;
+	border-radius: 50px;
+	color: #888;
+	background-color: #eee;
+	transition-duration: .2s;
+	transform: translateY(50%);
+}
+.xemTatCa:hover {
+	background-color: #ccc;
+	color: #000;
+}

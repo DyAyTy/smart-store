@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- fonts icon -->
+    <link rel="shortcut icon" href="assets/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/topnav.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/tintuc.css">
+    <!-- js -->
+    <script src="assets/data/products.js"></script>
+    <script src="assets/js/bundle.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+<body>
+
+    <script> addTopNav(); </script>
+
+    <section style="min-height: 786px;">
+
+        <script> addHeader(); </script>
+
+        <div class="container">
+
+            <div class="tintuc-info">
+                <a href="https://www.24h.com.vn/thoi-trang-hi-tech/dien-thoai-may-tinh-bang-thu-cu-thuong-duoc-xu-ly-nhu-the-nao-c407a1482583.html" target="_blank">
+                    <img src="assets/img/tintuc/tintuc6.png">
+                    <h2>Điện thoại, máy tính bảng thu cũ thường được xử lý như thế nào?</h2>
+                </a>
+                <br/>
+                <h5>24h</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.24h.com.vn/thoi-trang-hi-tech/lieu-iphone-16-pro-co-dang-de-ifan-lot-dep-cho-c407a1481913.html" target="_blank">
+                    <img src="assets/img/tintuc/tintuc7.png">
+                    <h2>Liệu iPhone 16 Pro có đáng để iFan "lót dép" chờ?</h2>
+                </a>
+                <br/>
+                <h5>24h</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/tin-tuc/top-smartphone-man-hinh-lon-gia-duoi-3-trieu-1536649" target="_blank">
+                    <img src="assets/img/tintuc/tintuc8.png">
+                    <h2>Giải trí tiết kiệm: Chọn smartphone màn hình lớn giá chỉ bằng 'vài tuần' làm thêm</h2>
+                </a>
+                <br/>
+                <h5>Thegioididong</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="" target="_blank">
+                    <img src="assets/img/tintuc/tintuc9.png">
+                    <h2>Quá HOT: Chỉ cần bỏ ra 14.000 đồng để mua Galaxy A14 5G, số lượng có hạn!</h2>
+                </a>
+                <br/>
+                <h5>Thegioididong</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="" target="_blank">
+                    <img src="assets/img/tintuc/tintuc10.png">
+                    <h2>BlackBerry – cựu vương smartphone thất bại vì niềm tin sai lầm</h2>
+                </a>
+                <br/>
+                <h5>VnEpress</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script>
+        addContainTaiKhoan(); addPlc();
+    </script>
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+    </div>
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+</html>

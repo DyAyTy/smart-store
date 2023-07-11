@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Store</title>
+    <!-- fonts icon -->
+    <link rel="shortcut icon" href="assets/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/topnav.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/account.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/baohanh.css">
+    <!-- js -->
+    <script src="assets/data/products.js"></script>
+    <script src="assets/js/bundle.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+</head>
+<body>
+
+    <script> addTopNav(); </script>
+
+    <section style="min-height: 786px;">
+
+        <script> addHeader(); </script>
+
+        <table>
+            <tr>
+                <td colspan="4" class="header-table">
+                    <marquee behavior="scroll" direction="left">Các trung tâm bảo hành của Smart Store</marquee>
+                </td>
+            </tr>
+            <tr>
+                <th class="col1">STT</th>
+                <th class="col2">Địa chỉ</th>
+                <th class="col3">Điện thoại</th>
+                <th class="col4">Thời gian làm việc</th>
+            </tr>
+
+            <script>
+                var trungtam = [
+                    ["290 Tây Sơn, Đống Đa, Hà Nội", "0848089086" , "8h00 - 21h00"]
+                ]
+
+                for (var i = 0; i < trungtam.length; i++) {
+                    var link = 'https://maps.google.com/maps?q=' + trungtam[i][0];
+                    document.write(`
+                        <tr>
+                            <td class="col1">` + (i + 1) + `</td>
+                            <td class="col2"> 
+                                <a href="`+link+`" target="_blank" title="Xem bản đồ">
+                                    ` + trungtam[i][0] +`
+                                </a>
+                            </td>
+                            <td class="col3">` + trungtam[i][1] +`</td>
+                            <td class="col4">` + trungtam[i][2] +`</td>
+                        </tr>
+                    `)
+                }
+            </script>
+        </table>
+
+    </section>
+
+    <script>
+        addContainTaiKhoan(); addPlc();
+    </script>
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+    </div>
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+</html>
